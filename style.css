@@ -1,0 +1,67 @@
+
+/* General Page Styling */
+body {
+    background: linear-gradient(to bottom, #000a30, #020f50);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Sidebar Navigation */
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: rgba(10, 10, 50, 0.9);
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.sidebar button {
+    display: block;
+    width: 90%;
+    background: #1a1a6f;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.sidebar button:hover {
+    background: #2a2adf;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Content Area */
+.content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tab Content (Hidden by Default) */
+.tab-content {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+/* Processed Image */
+img {
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Patient Info</h2>
+    <div class="results-container">
+        <p><strong>Name:</strong> {{ patient }}</p>
+        <p><strong>Modality:</strong> {{ modality }}</p>
+        <p><strong>Study Date:</strong> {{ study_date }}</p>
+    </div>
+
+    <h2>Lesion Detection Results</h2>
+    <div class="results-container">
+        <p><strong>Lesions Found:</strong> {{ lesion_count }}</p>
+        <img src="{{ url_for('static', filename='processed_image.png') }}" alt="Processed DICOM">
+    </div>
+</body>
+</html>
